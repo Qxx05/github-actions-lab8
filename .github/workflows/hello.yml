@@ -7,11 +7,14 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello
-        run: echo "Hello from GitHub Actions!"
+      - name: Show Python Version
+        run: python3 --version
 
-      - name: Show Date
-        run: date
+      - name: Show Git Version
+        run: git --version
 
-      - name: Show Operating System
-        run: uname -a
+      - name: Show Current Directory
+        run: pwd
+
+      - name: Show Files
+        run: ls -la
